@@ -1,0 +1,12 @@
+/* embed code of work sans font from google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+/* =============================== */
+/* Regular font CSS for the whole website  */
+.work-sans-font {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+/* ====================================== */
+
