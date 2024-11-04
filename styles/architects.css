@@ -37,6 +37,13 @@
   border: none;
   background: #ff900e;
 }
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+main > section {
+  margin-top: 130px;
+}
 
 /*=============== header styles ============= */
 
@@ -81,9 +88,34 @@
   width: 100%;
   margin-bottom: 45px;
 }
+
+/* =============team and feature related styles============ */
+
+.teams {
+  align-items: center;
+}
+.team-img-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.out-features {
+  margin-left: 130px;
+  max-width: 530px;
+}
+
+.feature-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+#quick-list {
+  font-weight: 500;
+}
+/*=========== Responsive CSS================ */
+
 @media screen and (max-width: 576px) {
   .navbar,
   .nav-link {
-    flex-direction: column  ;
+    flex-direction: column;
   }
 }
