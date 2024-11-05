@@ -116,7 +116,41 @@ main > section {
 }
 
 /* ===================Features will enjoy=============== */
-
+.features {
+  gap: 140px;
+}
+#feature-section-title {
+  border-left: 5px solid #ff900e;
+  padding-left: 20px;
+}
+.feature-card .feature-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.feature-card {
+  padding: 30px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+  margin-bottom: 20px;
+}
+#experience-badge {
+  border-radius: 8px;
+  color: white;
+  border: none;
+  background: #ff900e;
+  padding: 45px 42px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: -100px;
+  margin-left: -92px;
+}
+#experience-year {
+  font-size: 4rem;
+  font-weight: 700;
+}
 /* ==================================================== */
 /* =====================some facts===================== */
 .facts-container {
@@ -161,18 +195,37 @@ main > section {
   filter: grayscale(100%);
 }
 /* ==================================================== */
+/* ====================footer========================= */
+footer {
+  width: 1440px;
+  height: 100px;
+  border-radius: 8px;
+  background: #fff4e7;
+  align-items: center;
+  justify-content: center;
+  margin: 130px 240px 200px 240px;
+}
+/* ================================================== */
 /*=========== Responsive CSS================ */
 
 @media screen and (max-width: 576px) {
   .navbar,
   .nav-link,
-  .teams {
+  .teams,
+  .features {
     flex-direction: column;
   }
   .team-img-container,
   .facts-container,
   .sponsor-companies {
     grid-template-columns: 1fr;
+  }
+  .feature-architect img {
+    width: 100%;
+  }
+  #experience-badge {
+    margin-top: 20px;
+    margin-left: 20px;
   }
   .out-features {
     margin-left: 20px;
@@ -188,10 +241,21 @@ main > section {
 }
 /* medium size device */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-  .teams {
+  .teams,
+  .features {
     flex-direction: column;
+  }
+  #experience-badge {
+    margin-top: 20px;
+    margin-left: 20px;
   }
   .out-features {
     margin: 50px auto;
+  }
+  .sponsor-companies,
+  .facts-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    justify-content: center;
   }
 }
